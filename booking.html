@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Lemon - Reservation</title>
+    <link rel="stylesheet" href="littlelemonnewyork.css">
+    <style>
+        /* Custom styles for the reservation form */
+        body {
+            background-color: #003300; /* Dark green background */
+        }
+        #booking-form {
+            max-width: 400px;
+            margin: 50px auto; /* Adjust the margin to move the form down */
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #booking-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        #booking-form input[type="date"],
+        #booking-form input[type="time"],
+        #booking-form input[type="number"],
+        #booking-form select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #booking-form button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #booking-form button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<form id="booking-form">
+    <label for="date">Date (mm/dd/yyyy):</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="time">Time (--:-- --):</label>
+    <input type="time" id="time" name="time" required>
+
+    <label for="guests">Number of Guests:</label>
+    <input type="number" id="guests" name="guests" required>
+
+    <label for="occasion">Occasion:</label>
+    <select id="occasion" name="occasion" required>
+        <option value="">Select Occasion</option>
+        <option value="birthday">Birthday</option>
+        <option value="anniversary">Anniversary</option>
+    </select>
+
+    <button type="submit">Confirm Booking</button>
+</form>
+
+<script src="littlelemonscript.js"></script>
+</body>
+</html>

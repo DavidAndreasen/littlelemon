@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 80px; /* Adjust logo size */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Change display to flex */
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.hero {
+    background-color: #003300; /* Dark green background color */
+    color: white; /* White text color */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjusted alignment */
+    padding: 100px; /* Adjust padding as needed */
+}
+
+.hero-image {
+    max-width: 50%; /* Adjust image width */
+}
+
+.hero-content {
+    max-width: 40%; /* Limit content width */
+    text-align: right; /* Align text to the right */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hero-content h1 {
+    font-size: 48px; /* Adjust heading font size */
+    margin-bottom: 10px; /* Adjust spacing */
+}
+
+.hero-content h2 {
+    font-size: 36px; /* Adjust subheading font size */
+    margin-bottom: 20px; /* Adjust spacing */
+}
+
+.hero-content p {
+    font-size: 18px; /* Adjust paragraph font size */
+    margin-bottom: 20px; /* Adjust spacing */
+    text-align: center; /* Center the paragraph */
+}
+
+.reserve-btn {
+    background-color: yellow;
+    color: black;
+    padding: 8px 20px; /* Adjusted button padding */
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reserve-btn:hover {
+    background-color: #ffcc00; /* Darker yellow on hover */
+}
+
+.specials {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.special {
+    flex: 1;
+    background-color: #ccffcc; /* Light green background color */
+    border-radius: 8px;
+    overflow: hidden; /* Prevents content overflow */
+    margin: 0 10px; /* Add margin between specials */
+}
+
+.special-details {
+    padding: 20px;
+    text-align: center;
+}
+
+.special img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; /* Rounded corners for top */
+    height: 200px; /* Set a fixed height */
+}
+
+.order-btn {
+    width: 100%;
+    background-color: yellow;
+    color: black;
+    padding: 8px 20px; /* Adjusted button padding */
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #ffcc00; /* Darker yellow on hover */
+}
